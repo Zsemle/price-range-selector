@@ -1,10 +1,19 @@
-ul {
+html{
+  font-size: 67.5%;
+}
+main {
+  max-width: 80rem;
+  margin: auto;
+  font-size: 1.6rem;
+  padding: 0 2rem;
+}
+.checkbox-container {
     width: 120px;
-    padding: 10px 5px;
-    outline: 1px solid rgb(0,0,0);
+    padding: 1rem 0.5rem;
+    outline: 0.1rem solid rgb(0,0,0);
     background-color: rgb(240,240,240);
 }
-ul li{
+.checkbox-container li{
     list-style: none;
 }
 .boundary + label{
