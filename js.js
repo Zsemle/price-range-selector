@@ -2,9 +2,8 @@ let inputs = document.getElementsByTagName('input');
 let checkedInputs = [];
 
 function initSelector(){
-    [...inputs].forEach((item,index) => {
+    [...inputs].forEach(item => {
         item.onchange = triggered;
-        item.dataset.index = index;
     });
 }
 
@@ -15,9 +14,9 @@ function triggered(event){
 
 function buildCheckedInputs(){
     checkedInputs = [];
-    [...inputs].forEach(item => {
+    [...inputs].forEach((item,index) => {
         if (item.checked){
-            checkedInputs.push(parseInt(item.dataset.index))
+            checkedInputs.push(parseInt(index))
         }
     });
 }
